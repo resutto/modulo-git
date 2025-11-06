@@ -14,6 +14,18 @@ Boa sorte e bons commits! 🚀
 """
 
 msgBoasVindas = "Bem-vindo ao Desavio do Git!"
+comandosBasicos = [
+    "git init",
+    "git status",
+    "git add",
+    "git commit",
+    "git log",
+    "git clone",
+    "git reset",
+    "git push",
+    "git pull",
+    "git merge",
+]
 
 
 def mostrar_mensagem_inicial():
@@ -30,7 +42,7 @@ def listar_comandos_git_basicos():
     Exemplo de saída:
     ["git init", "git add", "git commit", "git status", "git push"]
     """
-    pass
+    print(comandosBasicos)
 
 
 def criar_mensagem_commit(funcao_nome):
@@ -65,4 +77,4 @@ def gerar_relatorio_final(funcoes_concluidas):
 
 
 if __name__ == "__main__":
-    mostrar_mensagem_inicial()
+    listar_comandos_git_basicos()
