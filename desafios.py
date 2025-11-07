@@ -52,7 +52,16 @@ def criar_mensagem_commit(funcao_nome):
     criar_mensagem_commit("listar_comandos_git_basicos") ->
     "Implementa função listar_comandos_git_basicos"
     """
-    pass
+    if funcao_nome == "mostrar_mensagem_inicial":
+        return "feature1_5 implementada - Mensagem Boas Vindas"
+    elif funcao_nome == "listar_comandos_git_basicos":
+        return "feature2_5 implementada - Lista de Comandos Git"
+    elif funcao_nome == "criar_mensagem_commit":
+        return "feature3_5 implementada - Criar Mensagem Commit"
+    elif funcao_nome == "verificar_tag_valida":
+        return "feature4_5 implementada - Validar formato TAG"
+    elif funcao_nome == "gerar_relatorio_final":
+        return "feature5_5 implementada - relatorio final"
 
 
 def verificar_tag_valida(tag):
@@ -77,4 +86,4 @@ def gerar_relatorio_final(funcoes_concluidas):
 
 
 if __name__ == "__main__":
-    listar_comandos_git_basicos()
+    print(criar_mensagem_commit("listar_comandos_git_basicos"))
