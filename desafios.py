@@ -27,6 +27,22 @@ comandosBasicos = [
     "git merge",
 ]
 
+funcoesMsgStatusOk = [
+    "mostrar_mensagem_inicial",
+    "listar_comandos_git_basicos",
+    "criar_mensagem_commit",
+    "verificar_tag_valida",
+    "gerar_relatorio_final",
+]
+
+funcoesMsgStatusValidar = [
+    "mostrar_mensagem_inicial",
+    "listar_comandos_git_basicos",
+    "criar_mensagem_commit",
+    "verificar_tag_valida",
+    "gerar_relatorio_final",
+]
+
 
 def mostrar_mensagem_inicial():
     """
@@ -103,8 +119,12 @@ def gerar_relatorio_final(funcoes_concluidas):
     ->
     "Desafio concluído! 2 funções implementadas com sucesso."
     """
-    pass
+    qde = 0
+    for i in range(len(funcoes_concluidas)):
+        if funcoes_concluidas[i] in funcoesMsgStatusOk:
+            qde = qde + 1
+    print(f"Desafio concluído! {qde} funções imprementadas com sucesso.")
 
 
 if __name__ == "__main__":
-    print(verificar_tag_valida("v1.1"))
+    gerar_relatorio_final(funcoesMsgStatusValidar)
